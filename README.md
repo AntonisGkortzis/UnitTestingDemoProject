@@ -19,17 +19,17 @@ This command will also generate a report of the code coverage produced by JaCoCo
 target/site/jacoco
 ```
 ## Test project
-To simply run the unit tests of the project, execute the follwoing Maven command: 
+To simply run the unit tests of the project, execute the following Maven command: 
 ```
 mvn test
 ```
 Note that only classes with a ```Test``` suffix located in the ```src/test``` will be executed.
 
-## Continous Integration
+## Continuous Integration
 This projects utilizes TravisCI services in other to test and build the application upon each ```git-push``` in the remote repository. 
 There are multiple build environments in which the application will be tested and build. You can check these options under the ```jdk``` tag in the ```.travis.yml``` file. 
 
-After each build, the badge is updated with the corresponing build status, ```green``` for passes and ```red``` for failures.
+After each build, the badge is updated with the corresponding build status, ```green``` for passes and ```red``` for failures.
 
 [Here](https://docs.travis-ci.com/user/getting-started/) is a TravisCI quick guide. It's free for public repositories! 
 
@@ -37,7 +37,7 @@ After each build, the badge is updated with the corresponing build status, ```gr
 The repository is connected to two different **code coverage** analysis tools, [CodeCov](https://codecov.io/) and [Coveralls](https://coveralls.io/). Both code coverage services provide badges with the coverage percentages.
 
 ### CodeCov
-Code coverage reports provided by CodeCov is available on the repository page in the CodeCov website. The analysis is executed after each sucessfull TravisCI build. 
+Code coverage reports provided by CodeCov is available on the repository page in the CodeCov website. The analysis is executed after each successfully TravisCI build. 
 
 The command for triggering the code coverage analysis should be placed in the ```.travis.yml``` as illustrated below
 ```
@@ -48,14 +48,14 @@ after_success:
 [Here](https://github.com/codecov/example-java) is a short example for using CodeCov with TravisCI in a Java project.
 
 ### Coveralls
-Coveralls is a stand alone code coverage analysis tool. However, it can be used as an analyzer for the JaCoCo report produced during the ```package``` Maven command. In this repository we utilize Coveralls with its later functionality. 
+Coveralls is a stand alone code coverage analysis tool. However, it can be used as an analyser for the JaCoCo report produced during the ```package``` Maven command. In this repository we utilize Coveralls with its later functionality. 
 
 For parsing the JaCoCo output and creating a code coverage report, the ```jacoco:report coveralls:report``` arguments should be added in the Maven command in the ```.travis.yml``` file. 
 ```
 mvn clean package jacoco:report coveralls:report
 ```
 
-Also, the Coveralls plugin along with the repository *Token* (produced automatically by the Coveralls website) should be added in the ***pom.xml*** file like the following:
+Also, the Coveralls plug-in along with the repository *Token* (produced automatically by the Coveralls website) should be added in the ***pom.xml*** file like the following:
 ```
 <plugin>
     <groupId>org.eluder.coveralls</groupId>
@@ -68,9 +68,9 @@ Also, the Coveralls plugin along with the repository *Token* (produced automatic
 ```
 
 ## Contributing
-You are more than welcome to contribute in this project. Just have in mind that the repository aims at providing an overview of unit testing functionality and Continuous Integration plugins related to testing. 
+You are more than welcome to contribute in this project. Just have in mind that the repository aims at providing an overview of unit testing functionality and Continuous Integration plug-ins related to testing. 
 - If you have any suggestions please open an issue. 
-- If you want to activelly contribute, please fork this repository and create a pull request after completing your addition/modification.
+- If you want to actively contribute, please fork this repository and create a pull request after completing your addition/modification.
 
 ## License 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
