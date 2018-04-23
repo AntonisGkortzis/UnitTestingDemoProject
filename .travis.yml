@@ -5,7 +5,7 @@ jdk:
   - oraclejdk8
 
 sudo: false
-script: mvn clean package
+script: mvn clean package jacoco:report coveralls:report
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
