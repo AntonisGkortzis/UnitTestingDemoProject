@@ -24,7 +24,7 @@ public class TestRunner {
 		Result result = JUnitCore.runClasses(
 				MyMathTest.class,
 				MyAdvancedMathTest.class,
-				MyAdvancedMathTest_PowerOfTwo_Parameterized.class);
+				MyAdvancedMathTest_PowerOfTwo_ParameterizedTest.class);
 		
 		// Retrieving and printing any failed tests
 		for (Failure failure : result.getFailures()) {

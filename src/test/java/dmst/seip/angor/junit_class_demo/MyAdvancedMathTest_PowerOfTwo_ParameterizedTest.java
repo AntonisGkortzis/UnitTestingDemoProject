@@ -18,7 +18,7 @@ import org.junit.Assert;
  * @author agkortzis (antonis.gkortzis@gmail.com)
  */
 @RunWith(Parameterized.class)
-public class MyAdvancedMathTest_PowerOfTwo_Parameterized {
+public class MyAdvancedMathTest_PowerOfTwo_ParameterizedTest {
 	
 	// the value is the id of each parameter
 	@Parameter (value = 0) 
