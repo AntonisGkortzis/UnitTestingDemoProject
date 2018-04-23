@@ -23,7 +23,7 @@ To simply run the unit tests of the project, execute the following Maven command
 ```
 mvn test
 ```
-Note that only classes with a ```Test``` suffix located in the ```src/test``` will be executed.
+***Important:*** Note that only classes with a ```Test``` suffix located in the ```src/test``` will be executed and reported as Tests.
 
 ## Continuous Integration
 This projects utilizes TravisCI services in other to test and build the application upon each ```git-push``` in the remote repository. 
