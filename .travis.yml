@@ -6,8 +6,11 @@ jdk:
 
 sudo: false
 
-before_install:
-  - openssl aes-256-cbc -K $encrypted_bf13b9e06e68_key -iv $encrypted_bf13b9e06e68_iv -in deploykeySEiP.enc -out ~\/.ssh/deploykeySEiP -d
+env:
+  global:
+  - ENCRYPTION_LABEL: bf13b9e06e68
+  - COMMIT_AUTHOR_EMAIL: antonisgor@gmail.com
+
 
 script: mvn clean package jacoco:report coveralls:report
 
