@@ -41,7 +41,7 @@ cd ..
 rm -rf build/* || exit 0
 
 # Run our compile script
-doCompile
+# doCompile
 
 # Now let's go have some fun with the cloned repo
 cd build
@@ -68,7 +68,6 @@ ENCRYPTED_IV_VAR="encrypted_${ENCRYPTION_LABEL}_iv"
 ENCRYPTED_KEY=${!ENCRYPTED_KEY_VAR}
 ENCRYPTED_IV=${!ENCRYPTED_IV_VAR}
 openssl aes-256-cbc -K $encrypted_bf13b9e06e68_key -iv $encrypted_bf13b9e06e68_iv -in ../deploykeySEiP.enc -out deploykeySEiP -d
-openssl aes-256-cbc -K $encrypted_1759e8df177c_key -iv $encrypted_1759e8df177c_iv -in ../deploy_key_cv.enc -out deploy_key_cv -d
 
 if [ -n "$DEBUG" ] ; then
   set -x
