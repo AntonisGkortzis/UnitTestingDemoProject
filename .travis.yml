@@ -12,7 +12,9 @@ env:
   - COMMIT_AUTHOR_EMAIL: antonisgor@gmail.com
 
 
-script: mvn clean package jacoco:report coveralls:report
+script: 
+  - mvn clean package jacoco:report coveralls:report
+  - bash tools/travis-deploy.sh
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
