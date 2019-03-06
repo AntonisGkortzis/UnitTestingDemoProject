@@ -68,14 +68,15 @@ ENCRYPTED_IV_VAR="encrypted_${ENCRYPTION_LABEL}_iv"
 ENCRYPTED_KEY=${!ENCRYPTED_KEY_VAR}
 ENCRYPTED_IV=${!ENCRYPTED_IV_VAR}
 openssl aes-256-cbc -K $encrypted_bf13b9e06e68_key -iv $encrypted_bf13b9e06e68_iv -in ../deploykeySEiP.enc -out deploykeySEiP -d
+# openssl aes-256-cbc -K $encrypted_1759e8df177c_key -iv $encrypted_1759e8df177c_iv -in ../deploy_key_cv.enc -out deploy_key_cv -d
 
 if [ -n "$DEBUG" ] ; then
   set -x
 fi
 
-chmod 600 deploy_key_cv
+chmod 600 deploykeySEiP
 eval `ssh-agent -s`
-ssh-add deploy_key_cv
+ssh-add deploykeySEiP
 
 # Now that we're all set up, we can push.
 git push $SSH_REPO $TARGET_BRANCH
