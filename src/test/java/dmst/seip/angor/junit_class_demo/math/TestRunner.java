@@ -1,4 +1,4 @@
-package dmst.seip.angor.junit_class_demo;
+package dmst.seip.angor.junit_class_demo.math;
 
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;

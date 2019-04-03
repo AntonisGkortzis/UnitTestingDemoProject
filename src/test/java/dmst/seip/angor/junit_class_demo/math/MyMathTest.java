@@ -1,6 +1,9 @@
-package dmst.seip.angor.junit_class_demo;
+package dmst.seip.angor.junit_class_demo.math;
 
 import org.junit.Test;
+
+import dmst.seip.angor.junit_class_demo.math.MyMath;
+
 import org.junit.Assert;
 
 /**

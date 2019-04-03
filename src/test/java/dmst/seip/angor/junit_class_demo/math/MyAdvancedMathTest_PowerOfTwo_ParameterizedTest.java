@@ -1,4 +1,4 @@
-package dmst.seip.angor.junit_class_demo;
+package dmst.seip.angor.junit_class_demo.math;
 
 import java.util.Arrays;
 import java.util.Collection;
@@ -8,6 +8,8 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameter;
 import org.junit.runners.Parameterized.Parameters;
+
+import dmst.seip.angor.junit_class_demo.math.MyAdvancedMath;
 
 import org.junit.Assert;
 
