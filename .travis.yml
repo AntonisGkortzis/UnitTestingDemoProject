@@ -1,26 +1,9 @@
 language: java
+
 jdk:
-  - openjdk7
   - openjdk8
+  - openjdk11
   - oraclejdk8
-
-language: node_js
- - "7"
-
-sudo: required
-
-env:
-  global:
-  - ENCRYPTION_LABEL: bf13b9e06e68
-  - COMMIT_AUTHOR_EMAIL: antonisgor@gmail.com
-
-before_script:
-  - npm install -g gulp-cli
-  - npm install gulp@3.9.0
 
 script: 
   - mvn clean package jacoco:report coveralls:report
-  - bash tools/travis-deploy.sh
-
-after_success:
-  - bash <(curl -s https://codecov.io/bash)
