@@ -1,12 +1,8 @@
 package dmst.seip.angor.junit_class_demo.grades;
 
-import java.awt.Graphics2D;
-import java.awt.geom.Rectangle2D;
-import java.awt.image.BufferedImage;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -15,7 +11,7 @@ import java.util.List;
 import org.jfree.chart.JFreeChart;
 import org.jfree.chart.ChartUtils;
 
-public class FileUtility {
+public class ChartIO {
 
 	public int[] readFile(String filepath) {
 		List<Integer> linesList = new ArrayList<>();
@@ -44,7 +40,6 @@ public class FileUtility {
 		try {
 			ChartUtils.saveChartAsJPEG(output, chart, 500, 500);
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
