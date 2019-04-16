@@ -8,11 +8,15 @@ branches:
   only:
   - master
 
+dist: xenial
+
+sudo: required
+
 before_install:
   - sudo apt update
 
 install:
-  - sudo apt install maven
+  - sudo apt install maven -y
 
 before_script: 
   - cd project
@@ -20,3 +24,6 @@ before_script:
 
 script: 
   - mvn clean package jacoco:report coveralls:report
+
+after_success:
+- bash <(curl -s https://codecov.io/bash)
