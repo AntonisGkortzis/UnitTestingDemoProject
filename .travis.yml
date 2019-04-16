@@ -4,5 +4,19 @@ jdk:
   - openjdk8
   - oraclejdk8
 
+branches:
+  only:
+  - master
+
+before_install:
+  - sudo apt update
+
+install:
+  - sudo apt install maven
+
+before_script: 
+  - cd project
+  - ls -la
+
 script: 
   - mvn clean package jacoco:report coveralls:report
