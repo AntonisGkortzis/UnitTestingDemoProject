@@ -8,8 +8,6 @@ branches:
   only:
   - master
 
-dist: xenial
-
 sudo: required
 
 before_install:
