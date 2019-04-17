@@ -17,7 +17,7 @@ install:
   - sudo apt install maven -y
 
 before_script: 
-  - cd project
+  - cd project  # enter Maven root directory
   - ls -la
 
 script: 
