@@ -1,8 +1,6 @@
 language: java
 jdk:
-  - openjdk7
   - openjdk8
-  - oraclejdk8
 
 language: node_js
  - "7"
