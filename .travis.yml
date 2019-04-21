@@ -24,4 +24,4 @@ script:
   - mvn clean package jacoco:report coveralls:report
 
 after_success:
-- bash <(curl -s https://codecov.io/bash)
+- bash <(curl -s https://codecov.io/bash) -t 1036eb64-2d96-44c6-b132-0dde4e7dfcca
