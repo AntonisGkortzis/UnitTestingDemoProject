@@ -28,7 +28,7 @@
     <dependency>
       <groupId>org.mockito</groupId>
       <artifactId>mockito-core</artifactId>
-      <version>2.16.0</version>
+      <version>2.27.0</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
@@ -37,7 +37,7 @@
       <plugin>
         <groupId>org.jacoco</groupId>
         <artifactId>jacoco-maven-plugin</artifactId>
-        <version>0.8.1</version>
+        <version>0.8.3</version>
         <configuration>
           <destFile>${basedir}/target/coverage-reports/jacoco-unit.exec</destFile>
           <dataFile>${basedir}/target/coverage-reports/jacoco-unit.exec</dataFile>
@@ -71,5 +71,6 @@
 
 	<modules>
 		<module>unit_test_demo</module>
+		<module>dummy_maven_module</module>
 	</modules>
 </project>
