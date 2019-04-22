@@ -21,7 +21,9 @@ before_script:
   - ls -la
 
 script: 
-  - mvn clean package jacoco:report coveralls:report # the coveralls:report is required only for the coveralls coverage service 
+  - mvn clean package jacoco:report coveralls:report cobertura:cobertura 
+    # the coveralls:report is required only for the coveralls coverage service
+    # the cobertura:cobertura is optional only for advanced coverage reporting and, if exists, is used by CodeCov 
 
 after_success:
 - bash <(curl -s https://codecov.io/bash) -t 1036eb64-2d96-44c6-b132-0dde4e7dfcca # replace the 1036eb64-2d96-44c6-b132-0dde4e7dfcca with your repository's token obtained by CodeCov
