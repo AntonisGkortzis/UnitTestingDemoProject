@@ -42,8 +42,10 @@ Code coverage reports provided by CodeCov is available on the repository page in
 The command for triggering the code coverage analysis should be placed in the ```.travis.yml``` as illustrated below
 ```
 after_success:
-  - bash <(curl -s https://codecov.io/bash)
+  - bash <(curl -s https://codecov.io/bash) -t your_token 
 ```
+The ```-t your_token``` is required only for private respositories. 
+
 In order to obtain a badge [![codecov](https://codecov.io/gh/AntonisGkortzis/UnitTestingDemoProject/branch/master/graph/badge.svg)](https://codecov.io/gh/AntonisGkortzis/UnitTestingDemoProject) in your README that reports the coverage of your project copy-paste the Markdown link provided by CodeCov in the repository's ```Settings-->Badge-->Markdown```. Note that if you have a private repository the badge requires a ```?token=a_token``` variable in the provided url. Otherwise it will always shows "unknown". 
 
 
