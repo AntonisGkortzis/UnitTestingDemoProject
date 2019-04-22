@@ -4,7 +4,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/AntonisGkortzis/UnitTestingDemoProject/badge.svg?branch=master&service=github)](https://coveralls.io/github/AntonisGkortzis/UnitTestingDemoProject)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ## Overview
-This is a Java project serving as a brief demonstration for Unit Testing for the needs of the lab tutorials of the [Software Engineering in Practice](https://www2.dmst.aueb.gr/dds/sweng-en/) course.
+This is a Java project serving as a brief demonstration for Unit Testing for the needs of the lab tutorials of the [Software Engineering in Practice](https://www2.dmst.aueb.gr/dds/sweng-en/) course. It makes use of Maven to automate the build process of the two available modules. 
 ## Requirements
 This project requires:
 - Java JDK [version 1.7](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) (or later) and
@@ -14,7 +14,7 @@ In order to build the project execute the following Maven command:
 ```
 mvn clean install
 ```
-This command will also generate a report of the code coverage produced by JaCoCo. The report will be located in the following path:
+This command will also generate a report of the code coverage produced by JaCoCo. The report will be located in the following path for each module:
 ```
 target/site/jacoco
 ```
