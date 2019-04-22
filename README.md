@@ -44,6 +44,8 @@ The command for triggering the code coverage analysis should be placed in the ``
 after_success:
   - bash <(curl -s https://codecov.io/bash)
 ```
+In order to obtain a badge [![codecov](https://codecov.io/gh/AntonisGkortzis/UnitTestingDemoProject/branch/master/graph/badge.svg)](https://codecov.io/gh/AntonisGkortzis/UnitTestingDemoProject) in your README that reports the coverage of your project copy-paste the Markdown link provided by CodeCov in the repository's ```Settings-->Badge-->Markdown```. Note that if you have a private repository the badge requires a ```?token=a_token``` variable in the provided url. Otherwise it will always shows "unknown". 
+
 
 [Here](https://github.com/codecov/example-java) is a short example for using CodeCov with TravisCI in a Java project.
 
@@ -66,6 +68,8 @@ Also, the Coveralls plug-in along with the repository *Token* (produced automati
     </configuration>
 </plugin>
 ```
+
+*Important:* Coveralls is free only for public repositories.  
 
 ## Contributing
 You are more than welcome to contribute in this project. Just have in mind that the repository aims at providing an overview of unit testing functionality and Continuous Integration plug-ins related to testing. 
