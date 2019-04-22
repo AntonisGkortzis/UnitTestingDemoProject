@@ -39,6 +39,23 @@ The repository is connected to two different **code coverage** analysis tools, [
 ### CodeCov
 Code coverage reports provided by CodeCov is available on the repository page in the CodeCov website. The analysis is executed after each successfully TravisCI build. 
 
+CodeCov can use a more elaborated code coverage report that is produced by including the following plugin in your POM file. 
+```
+<plugin>
+	<groupId>org.codehaus.mojo</groupId>
+	<artifactId>cobertura-maven-plugin</artifactId>
+	<version>2.7</version>
+	<configuration>
+		<formats>
+			<format>html</format>
+			<format>xml</format>
+		</formats>
+		<check />
+	</configuration>
+</plugin>
+```
+In order to produce the cobertura coverage report include the ```cobertura:cobertura``` in your ```mvn``` command.
+
 The command for triggering the code coverage analysis should be placed in the ```.travis.yml``` as illustrated below
 ```
 after_success:
@@ -47,7 +64,6 @@ after_success:
 The ```-t your_token``` is required only for private respositories. 
 
 In order to obtain a badge [![codecov](https://codecov.io/gh/AntonisGkortzis/UnitTestingDemoProject/branch/master/graph/badge.svg)](https://codecov.io/gh/AntonisGkortzis/UnitTestingDemoProject) in your README that reports the coverage of your project copy-paste the Markdown link provided by CodeCov in the repository's ```Settings-->Badge-->Markdown```. Note that if you have a private repository the badge requires a ```?token=a_token``` variable in the provided url. Otherwise it will always shows "unknown". 
-
 
 [Here](https://github.com/codecov/example-java) is a short example for using CodeCov with TravisCI in a Java project.
 
