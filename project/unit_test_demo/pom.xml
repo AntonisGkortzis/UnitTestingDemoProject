@@ -6,15 +6,14 @@
 	<parent>
 		<groupId>dmst.seip.angor</groupId>
 		<artifactId>seip.demo</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
+		<version>0.2</version>
 	</parent>
 
-	<groupId>dmst.seip.angor</groupId>
 	<artifactId>junit_class_demo</artifactId>
-	<version>0.1</version>
+	<version>0.2</version>
 	<packaging>jar</packaging>
 
-	<name>Junit Class Demo</name>
+	<name>Unit Testing Class Demo</name>
 	<url>http://maven.apache.org</url>
 
 </project>

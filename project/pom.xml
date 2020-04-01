@@ -4,10 +4,10 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>dmst.seip.angor</groupId>
 	<artifactId>seip.demo</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.2</version>
 	<packaging>pom</packaging>
-	<name>Project container</name>
-	<description>This is a parent project that contains SEiP demonstration modules</description>
+	<name>Unit Testing demo project container</name>
+	<description>This is a parent project that contains SEiP UnitTesting demonstration modules</description>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -87,7 +87,7 @@
 	</build>
 
 	<modules>
-		<module>unit_test_demo</module>
 		<module>dummy_maven_module</module>
+		<module>unit_test_demo</module>
 	</modules>
 </project>
