@@ -19,3 +19,4 @@ script:
 
 after_success:
 - bash <(curl -s https://codecov.io/bash) -t 1036eb64-2d96-44c6-b132-0dde4e7dfcca # replace the 1036eb64-2d96-44c6-b132-0dde4e7dfcca with your repository's token obtained by CodeCov
+- echo "Hello there!"
