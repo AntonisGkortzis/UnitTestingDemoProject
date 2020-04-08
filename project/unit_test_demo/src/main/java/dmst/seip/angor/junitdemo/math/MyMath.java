@@ -1,4 +1,4 @@
-package dmst.seip.angor.junit_class_demo.math;
+package dmst.seip.angor.junitdemo.math;
 
 /**
  * An class that provides some "simple" math operations

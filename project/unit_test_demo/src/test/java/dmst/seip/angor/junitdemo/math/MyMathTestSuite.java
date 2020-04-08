@@ -1,4 +1,4 @@
-package dmst.seip.angor.junit_class_demo.math;
+package dmst.seip.angor.junitdemo.math;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
@@ -10,7 +10,7 @@ import org.junit.runners.Suite;
  * @author agkortzis (antonis.gkortzis@gmail.com)
  */
 @RunWith(Suite.class)
-@Suite.SuiteClasses({MyMathTest.class, MyAdvancedMathTest.class})
+@Suite.SuiteClasses({MyMathTest.class, MyAdvancedMathTest.class, MyAdvancedMathPowerOfTwoParameterizedTest.class})
 public class MyMathTestSuite {
 	/*
 	 * This class remains empty. Is used only as a holder 

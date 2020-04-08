@@ -1,4 +1,4 @@
-package dmst.seip.angor.junit_class_demo.math;
+package dmst.seip.angor.junitdemo.math;
 
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
@@ -24,7 +24,7 @@ public class TestRunner {
 		Result result = JUnitCore.runClasses(
 				MyMathTest.class,
 				MyAdvancedMathTest.class,
-				MyAdvancedMathTest_PowerOfTwo_ParameterizedTest.class);
+				MyAdvancedMathPowerOfTwoParameterizedTest.class);
 		
 		// Retrieving and printing any failed tests
 		for (Failure failure : result.getFailures()) {

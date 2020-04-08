@@ -1,4 +1,4 @@
-package dmst.seip.angor.junit_class_demo.math;
+package dmst.seip.angor.junitdemo.math;
 
 import java.util.Arrays;
 import java.util.Collection;
@@ -9,7 +9,7 @@ import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameter;
 import org.junit.runners.Parameterized.Parameters;
 
-import dmst.seip.angor.junit_class_demo.math.MyAdvancedMath;
+import dmst.seip.angor.junitdemo.math.MyAdvancedMath;
 
 import org.junit.Assert;
 
@@ -20,7 +20,7 @@ import org.junit.Assert;
  * @author agkortzis (antonis.gkortzis@gmail.com)
  */
 @RunWith(Parameterized.class)
-public class MyAdvancedMathTest_PowerOfTwo_ParameterizedTest {
+public class MyAdvancedMathPowerOfTwoParameterizedTest {
 	
 	// the value is the id of each parameter
 	@Parameter (value = 0) 

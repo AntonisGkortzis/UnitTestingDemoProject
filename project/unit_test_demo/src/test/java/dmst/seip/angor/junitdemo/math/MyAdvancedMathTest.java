@@ -1,12 +1,12 @@
-package dmst.seip.angor.junit_class_demo.math;
+package dmst.seip.angor.junitdemo.math;
 
 import org.junit.Assert;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
 
-import dmst.seip.angor.junit_class_demo.math.MyAdvancedMath;
-import dmst.seip.angor.junit_class_demo.math.MyMath;
+import dmst.seip.angor.junitdemo.math.MyAdvancedMath;
+import dmst.seip.angor.junitdemo.math.MyMath;
 
 import static org.mockito.Mockito.*;
 
