@@ -2,23 +2,15 @@ language: java
 
 jdk:
   - openjdk8
-  - openjdk11
 
 branches:
   only:
   - master
-
-sudo: required
-
-before_install:
-  - sudo apt update
-
-install:
-  - sudo apt install maven -y # this command is only for demonstration reason. Any Travis virtual machine has maven pre-installed by default.
+  - development
 
 before_script: 
   - cd project  # enter Maven root directory
-  - ls -la
+  - ls -la # this command just prints the contents of the current working directory.
 
 script: 
   - mvn clean package jacoco:report coveralls:report cobertura:cobertura 
