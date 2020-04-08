@@ -25,7 +25,7 @@ public class MyAdvancedMathTest {
 	
 	/*
 	 * This is a constructor which is called 
-	 * when the MyAdvancedMathTest
+	 * when the MyAdvancedMathTest class is initialized
 	 */
 	public MyAdvancedMathTest() {
 		this.mam = new MyAdvancedMath();
@@ -36,7 +36,7 @@ public class MyAdvancedMathTest {
 	 * with normal input values. 
 	 */
 	@Test
-	public void test_add_normal() {
+	public void testAddNormal() {
 		Assert.assertEquals(7, mam.add(5, 2));
 	}
 	
@@ -45,7 +45,7 @@ public class MyAdvancedMathTest {
 	 * with zeros input values. 
 	 */
 	@Test
-	public void testAdd_shouldReturnZero() {
+	public void testAddShouldReturnZero() {
 		Assert.assertEquals(0, mam.add(0, 0));
 	}
 	
@@ -55,7 +55,7 @@ public class MyAdvancedMathTest {
 	 * in an Integer variable.
 	 */
 	@Test (expected = IllegalArgumentException.class)
-	public void testAdd_shouldThrowException_overflow() {
+	public void testAddShouldThrowExceptionOverflow() {
 		mam.add(Integer.MAX_VALUE, 1);
 	}
 	
@@ -67,7 +67,7 @@ public class MyAdvancedMathTest {
 	@Rule 
 	public ExpectedException thrown = ExpectedException.none(); //initialize it to .none()
 	@Test 
-	public void testAdd_shouldThrowException_negativeInput() {
+	public void testAddShouldThrowExceptionOnNegativeInput() {
 		// With @Rules you can perform more sophisticated checks
 		thrown.expect(IllegalArgumentException.class);
 		thrown.expectMessage("Input numbers should be positive.");
@@ -81,11 +81,11 @@ public class MyAdvancedMathTest {
 	 *  depends on the MyMath's reverseNumber method and a fail 
 	 *  in this method can cause this test to fail too. Thus, the 
 	 *  test is not isolated and cannot be called a valid Unit Test.
-	 *  The test_reverseArray_Mocking() is the atomic and 
+	 *  The testReverseArrayMocking() is the atomic and 
 	 *  isolated unit test for the reverseArray method.
 	 */
 	@Test
-	public void test_reverseArray() {
+	public void testReverseArray() {
 		MyMath mm = new MyMath();
 		int[] testValues = {1,2,-3,-4};
 		Assert.assertArrayEquals(new int[]{-1,-2,3,4}, 
@@ -100,7 +100,7 @@ public class MyAdvancedMathTest {
 	 * all calls that we plan to execute on the MyMaths' methods.
 	 */
 	@Test
-	public void test_reverseArray_Mocking() {
+	public void testReverseArrayMocking() {
 		// Mock the MyMath dependency
 		MyMath mm = mock(MyMath.class);
 		// Pre-define the results of the reverseNumber calls
