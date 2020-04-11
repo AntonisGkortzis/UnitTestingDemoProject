@@ -43,7 +43,7 @@ public class MyAdvancedMath {
 			return 1;
 		}
 		// The case where the result doesn't fit in an Integer variable
-		if (power <0 || power > 30) {
+		if (power < 0 || power > 30) {
 			throw new IllegalArgumentException("power should be 0<=power<=30");
 		}
 		
@@ -63,7 +63,7 @@ public class MyAdvancedMath {
 	 * @param mm the MyMath instance
 	 * @return an array with reversed signs
 	 */
-	public int[] reverseArray(int[] array, MyMath mm) {
+	public int[] reverseArrayNumbers(int[] array, MyMath mm) {
 		for(int i=0; i<array.length; i++) {
 			array[i] = mm.reverseNumber(array[i]);
 		}

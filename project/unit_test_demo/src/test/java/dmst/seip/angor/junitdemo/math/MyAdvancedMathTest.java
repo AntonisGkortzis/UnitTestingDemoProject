@@ -85,11 +85,11 @@ public class MyAdvancedMathTest {
 	 *  isolated unit test for the reverseArray method.
 	 */
 	@Test
-	public void testReverseArray() {
+	public void testReverseArrayNumbers() {
 		MyMath mm = new MyMath();
 		int[] testValues = {1,2,-3,-4};
 		Assert.assertArrayEquals(new int[]{-1,-2,3,4}, 
-				mam.reverseArray(testValues, mm));
+				mam.reverseArrayNumbers(testValues, mm));
 	}
 	
 	/*
@@ -100,7 +100,7 @@ public class MyAdvancedMathTest {
 	 * all calls that we plan to execute on the MyMaths' methods.
 	 */
 	@Test
-	public void testReverseArrayMocking() {
+	public void testReverseArrayNumbersMocking() {
 		// Mock the MyMath dependency
 		MyMath mm = mock(MyMath.class);
 		// Pre-define the results of the reverseNumber calls
@@ -112,7 +112,7 @@ public class MyAdvancedMathTest {
 		int[] testValues = {1,2,-3,-4};
 		// Call the reverseArray with the mocked MyMath instance
 		Assert.assertArrayEquals(new int[]{-1,-2,3,4}, 
-				mam.reverseArray(testValues, mm));
+				mam.reverseArrayNumbers(testValues, mm));
 	}
 	
 
