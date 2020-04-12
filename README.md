@@ -12,12 +12,13 @@ This project requires:
 ## Build project
 In order to build the project execute the following Maven command:
 ```
-mvn clean install
+mvn clean install jacoco:report
 ```
 This command will also generate a report of the code coverage produced by JaCoCo. The report will be located in the following path for each module:
 ```
 target/site/jacoco
 ```
+
 ## Test project
 To simply run the unit tests of the project, execute the following Maven command: 
 ```
@@ -25,7 +26,14 @@ mvn test
 ```
 ***Important:*** Note that only classes with a ```Test``` suffix located in the ```src/test``` will be executed and reported as Tests.
 
-## Continuous Integration
+## Generate Test-coverage report
+To simply run the unit tests of the project, execute the following Maven command: 
+```
+mvn test jacoco:report
+```
+
+
+## Continuous Integration service
 This projects utilizes TravisCI services in other to test and build the application upon each ```git-push``` in the remote repository. 
 There are multiple build environments in which the application will be tested and build. You can check these options under the ```jdk``` tag in the ```.travis.yml``` file. 
 
@@ -33,7 +41,7 @@ After each build, the badge is updated with the corresponding build status, ```g
 
 [Here](https://docs.travis-ci.com/user/getting-started/) is a TravisCI quick guide. It's free for public repositories! 
 
-## Code coverage
+## Code coverage services
 The repository is connected to two different **code coverage** analysis tools, [CodeCov](https://codecov.io/) and [Coveralls](https://coveralls.io/). Both code coverage services provide badges with the coverage percentages.
 
 ### CodeCov
