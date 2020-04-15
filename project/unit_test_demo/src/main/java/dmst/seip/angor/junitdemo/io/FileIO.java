@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
-* The FileIO provides simple file input/output operations
+* Provides simple file input/output operations
 * that serve as hands-on practice on Unit Testing.
 *
 * @author  agkortzis
