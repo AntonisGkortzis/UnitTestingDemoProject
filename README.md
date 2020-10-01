@@ -1,4 +1,4 @@
-# Unit Testing demonstration project
+# Unit Testing demonstration project An amazing Project regarding unit testing.
 [![Build Status](https://travis-ci.org/AntonisGkortzis/UnitTestingDemoProject.svg?branch=master)](https://travis-ci.org/AntonisGkortzis/UnitTestingDemoProject)
 [![codecov](https://codecov.io/gh/AntonisGkortzis/UnitTestingDemoProject/branch/master/graph/badge.svg)](https://codecov.io/gh/AntonisGkortzis/UnitTestingDemoProject)
 [![Coverage Status](https://coveralls.io/repos/github/AntonisGkortzis/UnitTestingDemoProject/badge.svg?branch=master&service=github)](https://coveralls.io/github/AntonisGkortzis/UnitTestingDemoProject)
