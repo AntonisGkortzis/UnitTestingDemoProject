@@ -95,7 +95,7 @@ Also, the Coveralls plug-in along with the repository *Token* (produced automati
 </plugin>
 ```
 
-*Important:* Coveralls is free only for public repositories.  
+*Important:* Coveralls is free for public repositories, and can also be free for private ones through a [GitHub Student Developer Pack](https://education.github.com/pack).
 
 ## Contributing
 You are more than welcome to contribute in this project. Just have in mind that the repository aims at providing an overview of unit testing functionality and Continuous Integration plug-ins related to testing. 
